@@ -1,0 +1,105 @@
+body{
+	margin:0;
+	padding:0px;
+	height:auto;
+}
+
+.contacts-row{
+	@media screen and (max-width: 1024px) {
+		padding:15px;
+	 }	
+	.contact-heading{
+		text-align:center;
+		
+		h2{
+			font-size: 36px;
+			font-weight: bold;
+			margin-bottom: 48px;
+			
+			@media screen and (max-width: 639px) {
+				font-size: 24px;
+				text-align:center;
+			}	
+		}
+		
+	}
+	
+	.cell{
+		label{
+			input{
+				margin:0px;
+				border-radius:0px;
+				border-color:#bdc0c8;
+				box-shadow: none;
+				height: 60px;
+				
+				&:focus{
+					border:2px solid #000 !important;
+				}
+			}
+			textarea{
+				border-radius:0px;
+				border-color:#bdc0c8;
+				box-shadow: none;
+				height: 174px;
+				&:focus{
+					border:2px solid #000 !important;
+				}
+			}
+
+		}
+					
+		.button{
+			border-radius: 0px;
+			background: #eb1e4a;
+			width: 208px;
+			height: 49px;
+			&:hover{	
+				background:#dd0031;
+			}
+		}
+	}
+	
+	.border-top-0 {
+		label{
+			input{
+				border-top:0px;
+			}
+			textarea{
+				border-top:0px;
+				border-color:#bdc0c8;
+			}
+		}
+	}
+	
+	.border-right-0{
+		label{
+			input{
+				border-right:0px;
+				  @media screen and (max-width: 639px) {
+					border-right:1px solid #bdc0c8 !important;
+				  }				
+			}
+		}
+	}
+	
+	.border-0{
+		label{
+			input{
+				  @media screen and (max-width: 639px) {
+					border-top:0px !important;
+				  }				
+			}
+		}
+	}
+	
+}
+
+
+
+
+
+
+
+
+
